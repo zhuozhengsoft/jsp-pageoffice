@@ -40,6 +40,7 @@
     copyFile(rootPath + "Word/AddSeal7/test_bak.doc", rootPath + "Word/AddSeal7/test.doc");
     copyFile(rootPath + "Word/AddSeal8/word8_bak.doc", rootPath + "Word/AddSeal8/word8.doc");
     copyFile(rootPath + "Word/AddSeal9/word9_bak.doc", rootPath + "Word/AddSeal9/word9.doc");
+    copyFile(rootPath + "Word/AddSeal10/word10_bak.doc", rootPath + "Word/AddSeal10/word10.doc");
 
     copyFile(rootPath + "Word/AddSign1/word1_bak.doc", rootPath + "Word/AddSign1/word1.doc");
     copyFile(rootPath + "Word/AddSign2/test_bak.doc", rootPath + "Word/AddSign2/test.doc");

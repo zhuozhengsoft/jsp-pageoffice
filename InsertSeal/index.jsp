@@ -155,6 +155,16 @@
                     (Word/AddSeal9)
                 </td>
             </tr>
+             <tr>
+                <td>
+                    11.加盖骑缝章：
+                    <a
+                            href="javascript:POBrowser.openWindowModeless('Word/AddSeal10/Word10.jsp','width=1200px;height=800px;');">Word10.jsp</a>
+                </td>
+                <td>
+                    (Word/AddSeal10)
+                </td>
+            </tr>
 
         </table>
         <div style="margin: 10px" align="center">
