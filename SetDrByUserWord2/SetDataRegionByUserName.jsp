@@ -14,20 +14,20 @@
     d1.setValue("[word]doc/content1.doc[/word]");
     d2.setValue("[word]doc/content2.doc[/word]");
 
-    //若要将数据区域内容存入文件中，则必须设置属性“setSubmitAsFile”值为true
-    d1.setSubmitAsFile(true);
-    d2.setSubmitAsFile(true);
-
     //根据登录用户名设置数据区域可编辑性
     //甲客户：zhangsan登录后
     if (userName.equals("zhangsan")) {
         d1.setEditing(true);
         d2.setEditing(false);
+       //若要将数据区域内容存入文件中，则必须设置属性“setSubmitAsFile”值为true
+       d1.setSubmitAsFile(true);
     }
     //乙客户：lisi登录后
     else {
         d2.setEditing(true);
         d1.setEditing(false);
+       //若要将数据区域内容存入文件中，则必须设置属性“setSubmitAsFile”值为true
+       d2.setSubmitAsFile(true);
     }
 
     PageOfficeCtrl poCtrl = new PageOfficeCtrl(request);
