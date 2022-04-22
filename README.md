@@ -106,7 +106,7 @@
 
 “POBrowser.openWindowModeless”的页面一定要引用下面的 js 文件：
 
-`<script type="text/javascript" src=" pageoffice.js"></script>`
+`<script type="text/javascript" src="/pageoffice.js"></script>`
 
 > 【注意】：pageoffice.js 文件的位置在第 2 步配置web.xml 的时候已经设置好了，
 >
