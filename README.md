@@ -110,12 +110,8 @@
 
 > 【注意】：pageoffice.js 文件的位置在第 2 步配置web.xml 的时候已经设置好了，
 >
-> 所以直接引用这个 js 即可，无需拷贝 pageoffice.js 文件到自己的Web 项目目录下：
->
-> 	<servlet-mapping>
-> 	    <servlet-name>poserver</servlet-name>
-> 		<url-pattern>/pageoffice.js</url-pattern>
-> 	</servlet-mapping>
+> 所以直接引用这个 js 即可，无需拷贝 pageoffice.js 文件到自己的Web项目目录下。
+
 
 ### 六、电子印章功能说明
 
