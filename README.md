@@ -20,8 +20,8 @@
 
 ### 五、集成PageOffice到您的项目中的关键步骤
 
-1. 拷贝“集成文件”文件夹中的lib文件夹覆盖到您自己Web项目中WEB-INF目录下；
-2.  参考“集成文件”文件夹中的web.xml文件，配置一下自己Web项目中的web.xml
+1. 拷贝“jsp-pageoffice/lib”文件夹中的pagoffice5.x.x.x.jar拷贝到您自己Web项目中WEB-INF目录下；
+2. 参考“jsp-pageoffice/WEB-INF”文件夹中的web.xml文件，配置一下自己Web项目中的web.xml
 
 文件，也可以直接把下面的这段配置添加到自己的web.xml 中；
 
