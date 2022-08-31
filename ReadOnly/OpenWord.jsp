@@ -1,19 +1,24 @@
 <%@ page language="java"
          import="com.zhuozhengsoft.pageoffice.OpenModeType,com.zhuozhengsoft.pageoffice.PageOfficeCtrl"
          pageEncoding="utf-8" %>
+<%@ page import="com.zhuozhengsoft.pageoffice.wordwriter.WordDocument" %>
 <%
     //******************************卓正PageOffice组件的使用*******************************
     //设置PageOffice服务器组件
+	WordDocument doc=new WordDocument();
+    doc.setDisableWindowSelection(true);//禁止选中
+    doc.setDisableWindowRightClick(true);//禁止右键
+
     PageOfficeCtrl poCtrl1 = new PageOfficeCtrl(request);
     poCtrl1.setServerPage(request.getContextPath() + "/poserver.zz"); //此行必须
 
-    poCtrl1.setAllowCopy(false);//禁止拷贝
     poCtrl1.setMenubar(false);//隐藏菜单栏
     poCtrl1.setOfficeToolbars(false);//隐藏Office工具条
     poCtrl1.setCustomToolbar(false);//隐藏自定义工具栏
     poCtrl1.setJsFunction_AfterDocumentOpened("AfterDocumentOpened");
     //设置页面的显示标题
     poCtrl1.setCaption("演示：文件在线安全浏览");
+    poCtrl1.setWriter(doc);//注意：千万别忘了这句，否则WordDocument设置的所有方法都不生效
     //打开文件
     poCtrl1.webOpen("doc/template.doc", OpenModeType.docReadOnly, "张三");
 %>
